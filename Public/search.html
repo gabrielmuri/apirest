@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cadastro de Pessoas</title>
+  </head>
+  <body>
+    <header>
+        <nav>
+            <div class="center">
+                <div class="logo">
+                    <h1 title="Cadastro de Pessoas">C.D.P</h1>
+                </div><!--logo-->
+                <div class="menu">
+                    <a href="index.html"><img src="img/botao-voltar.png" alt="" style="color: white;"> Voltar</a>
+                </div><!--menu-->
+            </div><!--center-->
+        </nav>
+    </header>
+    <div class="clear"></div>
+
+    <section class="section-table">
+        <div class="center">
+            
+            <table class="table table-dark table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Telefone</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Whatsapp</th>
+                    <th scope="col">Ações</th>
+                  </tr>
+                </thead>
+                <tbody id="resposta">
+                  
+                </tbody>
+              </table>
+              <!--modal-->
+
+              <!-- Button trigger modal -->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Editar Pessoa</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form name="frmEditar" method="get">                    
+                    <p>Para atualização preencha os campos corretamente!</p>
+                    <input type="hidden" id="id" name="id" value="">
+                    <label for="nome">Nome:</label>
+                    <br>
+                    <input type="text" name="nome" id="nome">
+                    <br>
+                    <label for="telefone">Telefone:</label>
+                    <br>
+                    <input type="text" name="telefone" id="telefone">
+                    <br>
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="text" name="email" id="email">
+                    <br>
+                    <label for="whatsapp">Whatsapp:</label>
+                    <br>
+                    <input type="text" name="whatsapp" id="whatsapp">
+                    <br> 
+                </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary" id="btn-atualizar">Atualizar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--fim modal-->
+
+        </div><!--center-->
+    </section><!--main-->
+    <footer>
+        <div class="center">
+            <p>Created By Gabriel Muri</p>
+        </div><!--center-->
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script> 
+    <script type="text/javascript" src="js/jquery.mask.min.js"></script>   
+    <script src="js/validador.js"></script>
+    <script type="text/javascript" src="js/request.js"></script>
+    <script type="text/javascript" src="js/mascara.js"></script>
+  </body>
+</html>
