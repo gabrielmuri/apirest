@@ -1,0 +1,17 @@
+{
+    "name": "gabriel/apirest",
+    "description": "API Rest - Cadastro de Pessoas",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gabriel Muri",
+            "email": "gabrielmuri.dev@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\" : "App/" 
+        }
+    }
+}
